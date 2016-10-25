@@ -8,6 +8,9 @@
 # Java class files
 *.class
 
+## Directory-based project format:
+.idea/
+
 # Generated files
 bin/
 gen/
