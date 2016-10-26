@@ -10,14 +10,13 @@
         android:id="@+id/product_image"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.5"
-        app:srcCompat="@android:drawable/ic_delete" />
+        app:srcCompat="@android:drawable/ic_delete"
+        android:layout_weight="1" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_weight="0.5"
-        android:orientation="vertical"
-        android:layout_height="0dp">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
         <EditText
             android:id="@+id/edit_item_name"
@@ -30,15 +29,15 @@
             android:id="@+id/edit_item_price"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="100"
-            android:inputType="number" />
+            android:inputType="number"
+            android:text="100" />
 
         <EditText
             android:id="@+id/edit_item_quantity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="100"
-            android:inputType="number" />
+            android:inputType="number"
+            android:text="100" />
 
         <EditText
             android:id="@+id/edit_item_supplier"
@@ -50,8 +49,8 @@
             android:id="@+id/edit_item_supplier_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="sells@acme.com"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            android:text="sells@acme.com" />
 
     </LinearLayout>
 
@@ -64,26 +63,29 @@
             android:id="@+id/edit_item_sell"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sell"
-            android:layout_alignParentStart="true"/>
+            android:layout_alignParentStart="true"
+            android:text="Sell" />
 
         <Button
             android:id="@+id/edit_item_buy"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Buy more"
-            android:layout_toRightOf="@id/edit_item_sell"/>
-        <Button
-            android:id="@+id/edit_item_save"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Save"
-            android:layout_toLeftOf="@id/edit_item_delete"/>
+            android:layout_toRightOf="@id/edit_item_sell"
+            android:text="Buy more" />
+
         <Button
             android:id="@+id/edit_item_delete"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Delete"
-            android:layout_alignParentEnd="true"/>
+            android:layout_alignParentEnd="true"
+            android:text="Delete" />
+
+        <Button
+            android:id="@+id/edit_item_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/edit_item_delete"
+            android:text="Save" />
+
     </RelativeLayout>
 </LinearLayout>
